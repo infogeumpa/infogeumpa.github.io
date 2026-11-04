@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikTok integration | Info Geumpa</title>
+<meta name="description" content="How Info Geumpa uses TikTok Login Kit and the Content Posting API to publish earthquake update videos.">
+<meta name="theme-color" content="#10222B">
+<meta property="og:site_name" content="Info Geumpa">
+<meta property="og:title" content="TikTok integration | Info Geumpa">
+<meta property="og:description" content="How Info Geumpa uses TikTok Login Kit and the Content Posting API to publish earthquake update videos.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Info Geumpa, home"><svg viewBox="0 0 34 20" aria-hidden="true"><path d="M0 10 L7 10 L9 7 L12 13 L15 1 L19 19 L22 6 L24 12 L26 10 L34 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>Info Geumpa</a>
+  <nav class="site-nav" aria-label="Main"><a href="about.html">About</a><a href="tiktok.html" aria-current="page">TikTok integration</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a class="btn" href="https://www.tiktok.com/@infogeumpa" target="_blank" rel="noopener">Follow on TikTok</a></nav>
+</div></header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><h1>TikTok integration</h1><p>How Info Geumpa uses the TikTok APIs, what it accesses, and what it does not.</p></div></section>
+<section class="content"><div class="wrap">
+
+<p class="updated">Last updated: 4 November 2026</p>
+<h2>Purpose</h2>
+<p>Info Geumpa uses a small publishing tool to post earthquake update videos to its own TikTok account, <a href="https://www.tiktok.com/@infogeumpa" target="_blank" rel="noopener">@infogeumpa</a>. The tool uses TikTok's Login Kit and Content Posting API. It exists only to publish Info Geumpa's own videos. It is not offered to the public and does not post on behalf of other people.</p>
+<h2>What the tool does</h2>
+<ol>
+<li><strong>Authorization.</strong> The account owner signs in with TikTok (Login Kit) and grants the permissions listed below.</li>
+<li><strong>Video creation.</strong> The tool prepares a short video from a BMKG, USGS or EMSC earthquake report: magnitude, time, location, depth and coordinates, with the source printed on screen.</li>
+<li><strong>Review.</strong> The account owner reviews the video, caption and privacy setting. Nothing is posted automatically without this approval.</li>
+<li><strong>Posting.</strong> After approval, the tool sends the video to TikTok through the Content Posting API. The post is labeled and credited to its data source in the caption.</li>
+</ol>
+<h2>Permissions (scopes) requested</h2>
+<div class="tablewrap"><table>
+<tr><th>Scope</th><th>Why we need it</th></tr>
+<tr><td><code>user.info.basic</code></td><td>To show the account owner which TikTok account is connected (display name and avatar) before posting.</td></tr>
+<tr><td><code>video.publish</code></td><td>To publish approved earthquake update videos to @infogeumpa (Direct Post).</td></tr>
+<tr><td><code>video.upload</code></td><td>To send a video to the account owner's TikTok drafts when the owner prefers to finish publishing inside TikTok.</td></tr>
+</table></div>
+<h2>What we do not do</h2>
+<ul>
+<li>We do not read, download or store other people's videos, comments, messages or follower lists.</li>
+<li>We do not post without the account owner's approval.</li>
+<li>We do not sell, share or use TikTok data for advertising, profiling or training of AI models.</li>
+<li>We do not use the API for engagement manipulation, spam or automated follows and likes.</li>
+</ul>
+<h2>Data handling</h2>
+<p>The tool stores only what it needs to keep the connection working: the account owner's TikTok open ID and the OAuth access and refresh tokens, kept in a private, access-restricted store. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+<h2>Disconnecting</h2>
+<p>The account owner can revoke access at any time in TikTok under <em>Settings and privacy &rarr; Security &amp; permissions &rarr; Apps and services</em>. On revocation, the stored tokens are deleted. You can also email <a href="mailto:infogeumpa@gmail.com">infogeumpa@gmail.com</a> and we will delete them.</p>
+<div class="note"><strong>Independent of TikTok.</strong>Info Geumpa is not affiliated with, endorsed by or sponsored by TikTok or ByteDance. TikTok is a trademark of its owner.</div>
+
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div><h4>Info Geumpa</h4><p>An earthquake information channel that shares updates as short videos, based on data from BMKG, USGS and EMSC.</p><p>Info Geumpa is independent. It is not affiliated with BMKG, USGS, EMSC, TikTok or ByteDance.</p></div>
+    <div><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="tiktok.html">TikTok integration</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Elsewhere</h4><ul><li><a href="https://www.tiktok.com/@infogeumpa" target="_blank" rel="noopener">TikTok @infogeumpa</a></li><li><a href="https://www.bmkg.go.id" target="_blank" rel="noopener">BMKG</a></li><li><a href="https://earthquake.usgs.gov" target="_blank" rel="noopener">USGS</a></li><li><a href="https://www.emsc-csem.org" target="_blank" rel="noopener">EMSC</a></li><li><a href="mailto:infogeumpa@gmail.com">infogeumpa@gmail.com</a></li></ul></div>
+  </div>
+  <div class="base"><span>&copy; 2026 Info Geumpa. Earthquake data sources: BMKG, USGS, EMSC.</span><nav aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav></div>
+</div></footer>
+</body>
+</html>
